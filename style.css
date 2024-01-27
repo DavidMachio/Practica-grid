@@ -1,9 +1,9 @@
 /* Definición de variables CSS personalizadas */
 :root {
-  --primary-color: rgb(236, 236, 236);
+  --primary-color: rgb(255, 255, 255);
   --secondary-color: rgb(21, 21, 21);
-  --blue-light: #7ec699;
-  --blue-dark: #2d505c;
+  --white: #7ec699;
+  --black: #000000;
   --border: 2px solid var(--blue-color);
   --spacing: 28px;
   font-family: Arial, Helvetica, sans-serif;
@@ -16,8 +16,8 @@
 }
 
 body {
-  background-color: var(--primary-color);
-  color: var(--blue-dark);
+  background-color: rgb(243, 243, 243);
+  color: var(--black);
   display: grid;
   grid-template-columns: repeat(3, 1fr); /* Tres columnas iguales */
   grid-auto-rows: 300px; /* Altura automática de filas */
@@ -28,9 +28,9 @@ body {
 header {
   grid-row: 1/3; /* Ocupa filas 1 y 2 */
   display: grid; /* Diseño de cuadrícula */
-  background-color: var(--blue-light); /* Fondo azul */
+  background-color: var(--primary-color); /* Fondo azul */
   padding: var(--spacing); /* Espaciado */
-  text-align: justify; /* Justificar el texto */
+  text-align: center; /* Justificar el texto */
 }
 /* Estilos del título en la cabecera */
 header > h1 {
@@ -40,11 +40,13 @@ header > h1 {
 /* Estilos del contenido principal */
 main {
   border: 2px solid var(--blue-light); /* Borde con el color azul */
-  color: var(--blue-light); /* Color de texto azul */
+  color: var(--blue-light);
+  background-color: white; /* Color de texto azul */
   text-transform: uppercase; /* Texto en mayúsculas */
   display: grid; /* Diseño de cuadrícula */
   place-items: center; /* Centrar contenido */
-  text-align: center; /* Texto centrado */
+  text-align: center;
+  padding: var(--spacing); /* Texto centrado */
 }
 
 /* Estilos del pie de página */
@@ -52,7 +54,7 @@ footer {
   grid-column: 2/4; /* Ocupa columnas 2 y 3 */
   display: grid; /* Diseño de cuadrícula */
   place-items: left; /* Alinear contenido a la izquierda */
-  background-color: var(--blue-dark);
+  background-color: var(--primary-color);
   color: var(--blue-light); /* Fondo naranja */
   padding: var(--spacing); /* Espaciado */
 }
@@ -63,7 +65,7 @@ footer > button {
   padding: var(--spacing); /* Espaciado */
   border: none; /* Sin borde */
   border-radius: 20px;
-  box-shadow: 0 0 20px var(--secondary-color);
+  box-shadow: 0 0 10px rgba(80, 80, 80, 0.26);
   text-transform: uppercase;
   background-color: var(--blue-light);
   color: var(--blue-dark); /* Texto en mayúsculas */
@@ -79,21 +81,21 @@ footer > button {
 }
 /* Estilos para las clases específicas (fondos de imágenes) */
 .school {
-  background-image: url(./public/chica.webp);
+  background-image: url("https://www.apple.com/newsroom/images/product/iphone/standard/Apple_announce-iphone12pro_10132020.jpg.og.jpg?202310101722");
   background-position: center;
 }
 
 .student {
-  background-image: url(./public/icono.jpeg);
+  background-image: url("https://think-ecuador.com/wp-content/uploads/2021/12/MacBook_Pro_16-in_Space_Gray_PDP_Image_Position-1__MXLA.jpeg");
   background-position: center;
 }
 
 .time {
-  background-image: url(./public/pareja.webp);
+  background-image: url("https://fotografias.lasexta.com/clipping/cmsimages01/2023/09/12/906CEE03-609B-43BA-B1A0-E15BEDC6C3C6/nuevo-iphone-15_98.jpg?crop=1300,731,x0,y9&width=1900&height=1069&optimize=high&format=webply");
 }
 
 .alumni {
-  background-image: url(./public/chico.webp);
+  background-image: url("https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/MTJV3?wid=572&hei=572&fmt=jpeg&qlt=95&.v=1694014871985");
 }
 
 .alumni,
